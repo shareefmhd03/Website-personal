@@ -1,7 +1,7 @@
 .contact-area{
     padding-top: 1rem;
     text-align: center;
-    width: 35rem;
+    width: auto;
     background-color: white;
     border-radius: 10px;
     border: solid 1px #2b90d9;
@@ -74,3 +74,14 @@
     /*background: #333;*/
     padding: 30px;
   }
+
+
+
+.error-message{
+    font-size: small;
+    font-family: sans-serif;
+    
+}
+.label-area{
+    font-size: small;
+}
