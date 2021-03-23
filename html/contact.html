@@ -93,7 +93,7 @@
       
                 <div class="form-group">
                   <label for="contact-phone">Phone Number</label>
-                  <input type="tel" class="form-control text-area mx-auto" id="contact-phone" name="phone" placeholder="Phone" onblur='validatePhone()' required>
+                  <input type="tel" class="form-control text-area mx-auto" id="contact-phone" name="phone" placeholder="Phone" pattern="\d{1,5}"  onblur='validatePhone()' required>
                   <span class='error-message' id='phone-error'></span>
                 </div>
       
