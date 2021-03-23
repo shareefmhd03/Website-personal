@@ -87,7 +87,7 @@
 
                 <div class="form-group">
                   <label for="contact-name">Name</label>
-                  <input type="text" class="form-control text-area mx-auto" id="contact-name" name="name"  placeholder="Name" onblur='validateName()' required>
+                  <input type="text" class="form-control text-area mx-auto" id="contact-name" name="name"  placeholder="Name" pattern="[a-zA-Z]+" onblur='validateName()' required>
                   <span class='error-message' id='name-error'></span>
                 </div>
       
