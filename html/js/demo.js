@@ -42,7 +42,7 @@ function validateName() {
   
     if (!name.match(/^[A-Za-z]+$/)) {
   
-      producePrompt('Invalid name','name-error', 'red');
+      producePrompt('Only Alphabets allowed','name-error', 'red');
       return false;
   
     }
