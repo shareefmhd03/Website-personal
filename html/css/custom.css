@@ -1,11 +1,12 @@
 .contact-area{
     padding-top: 1rem;
-    text-align: center;
+    /*text-align: center;*/
     width: 35rem;
     background-color: white;
     border-radius: 10px;
     border: solid 1px #2b90d9;
     padding-bottom: 1rem;
+    
     
 }
 
@@ -34,14 +35,14 @@
       width: 20rem;
       height: 20rem;
       border: 2px solid;
-      border-color: #2b90d9;
+      border-color: #64abdd;
       border-radius: 8px;
   }
   .progress{
       margin-top: 3 rem;
   }
-
-@keyframes slideInFromLeft {
+  
+  @keyframes slideInFromLeft {
     0% {
       transform: translateX(-100%);
     }
@@ -49,11 +50,27 @@
       transform: translateX(0);
     }
   }
-  header {  
+  .head-1 {  
     /* This section calls the slideInFromLeft animation we defined above */
     animation: 1s ease-out 0s 1 slideInFromLeft;
     
-    background: #333;
+    /*background: #333;*/
     padding: 30px;
   }
   
+
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .head-2 {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    
+    /*background: #333;*/
+    padding: 30px;
+  }
