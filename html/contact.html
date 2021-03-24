@@ -86,30 +86,38 @@
               <form id="contactForm" class="contact-area mx-auto">
 
                 <div class="form-group">
-                  <label for="contact-name" class="label-area">Name</label>
-                  <input type="text" class="form-control text-area mx-auto" id="contact-name" name="name"  placeholder="Name" pattern="[a-zA-Z]+" onblur='validateName()' required>
+                  <label for="contact-name "class="label-area" >Name</label>
+                  <input type="text" class="form-control text-area mx-auto" id="contact-name" name="name"  placeholder="Name" oninvalid="this.setCustomValidity(' ')"
+                  onchange="try{setCustomValidity('')}catch(e){}"
+                  oninput="setCustomValidity(' ')" pattern="[a-zA-Z]+"   onblur='validateName()'  required>
                   <span class='error-message' id='name-error'></span>
                 </div>
       
                 <div class="form-group">
                   <label for="contact-phone" class="label-area">Phone Number</label>
-                  <input type="tel" class="form-control text-area mx-auto" id="contact-phone" name="phone" placeholder="Phone" pattern="[0-9]+" maxlength="10" minlength="10"  onblur='validatePhone()' required>
+                  <input type="tel" class="form-control text-area mx-auto" id="contact-phone" name="phone" placeholder="Phone" oninvalid="this.setCustomValidity(' ')"
+                  onchange="try{setCustomValidity('')}catch(e){}"
+                  oninput="setCustomValidity(' ')" pattern="[0-9]+" maxlength="10" minlength="10" title=" " onblur='validatePhone()' required>
                   <span class='error-message' id='phone-error'></span>
                 </div>
       
                 <div class="form-group">
                   <label for="contact-email" class="label-area">Email address</label>
-                  <input type="email" class="form-control text-area mx-auto" id="contact-email" name="email" placeholder="Email" onblur='validateEmail()' onkeyup="validateEmail()" required>
+                  <input type="email" class="form-control text-area mx-auto" id="contact-email" name="email" oninvalid="this.setCustomValidity(' ')"
+                  onchange="try{setCustomValidity('')}catch(e){}"
+                  oninput="setCustomValidity(' ')" placeholder="Email" onblur='validateEmail()' onkeyup="validateEmail()" required>
                   <span class='error-message' id='email-error'></span>
                 </div>   
       
                 <div class="form-group">
                   <label for='contactMessage' class="label-area">Your Message</label>
-                  <textarea class="form-control text-area mx-auto" rows="5" id='contact-message'  name='message'  placeholder="Message"  required></textarea>
+                  <textarea class="form-control text-area mx-auto" rows="5" id='contact-message'  name='message' oninvalid="this.setCustomValidity('Cannot be empty')"
+                  onchange="try{setCustomValidity('')}catch(e){}"
+                  oninput="setCustomValidity(' ')"  placeholder="Message"  required></textarea>
                   <span class='error-message' id='message-error'></span>
                 </div>
       
-              <button onclick='return validateForm()' class="btn btn-default button-submit">Submit</button>
+              <button onclick=' return validateForm()' class="btn btn-default button-submit" >Submit</button>
               <span class='error-message' id='submit-error'></span>
             </form>
               
