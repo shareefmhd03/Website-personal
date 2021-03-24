@@ -5,9 +5,7 @@
     background-color: white;
     border-radius: 10px;
     border: solid 1px #2b90d9;
-    padding-bottom: 1rem;
-    
-    
+    padding-bottom: 1rem;   
 }
 
 .text-area{
@@ -74,8 +72,6 @@
     /*background: #333;*/
     padding: 30px;
   }
-
-
 
 .error-message{
     font-size: small;
