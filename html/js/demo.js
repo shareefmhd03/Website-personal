@@ -120,7 +120,7 @@ function validateName() {
   function validateForm() {
     if (!validateName() && !validatePhone() && !validateEmail()) {
       jsShow('submit-error');
-      producePrompt('', 'submit-error', 'red');
+      producePrompt(' ', 'submit-error', 'red');
       setTimeout(function(){jsHide('submit-error');}, 2000);
     }
     else {
