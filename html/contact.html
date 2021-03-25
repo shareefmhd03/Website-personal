@@ -88,8 +88,7 @@
                 <div class="form-group">
                   <label for="contact-name "class="label-area" >Name</label>
                   <input type="text" class="form-control text-area mx-auto" id="contact-name" name="name"  placeholder="Name" oninvalid="this.setCustomValidity(' ')"
-                  onchange="try{setCustomValidity('')}catch(e){}"
-                  oninput="setCustomValidity(' ')" pattern="[a-zA-Z]+"   onblur='validateName()'  required>
+                  pattern="[a-zA-Z]+"   onblur='validateName()'  required>
                   <span class='error-message' id='name-error'></span>
                 </div>
       
@@ -104,16 +103,14 @@
                 <div class="form-group">
                   <label for="contact-email" class="label-area">Email address</label>
                   <input type="email" class="form-control text-area mx-auto" id="contact-email" name="email" oninvalid="this.setCustomValidity(' ')"
-                  onchange="try{setCustomValidity('')}catch(e){}"
-                  oninput="setCustomValidity(' ')" placeholder="Email" onblur='validateEmail()' onkeyup="validateEmail()" required>
+                   placeholder="Email" onblur='validateEmail()' onkeyup="validateEmail()" required>
                   <span class='error-message' id='email-error'></span>
                 </div>   
       
                 <div class="form-group">
                   <label for='contactMessage' class="label-area">Your Message</label>
                   <textarea class="form-control text-area mx-auto" rows="5" id='contact-message'  name='message' oninvalid="this.setCustomValidity('Cannot be empty')"
-                  onchange="try{setCustomValidity('')}catch(e){}"
-                  oninput="setCustomValidity(' ')"  placeholder="Message"  required></textarea>
+                    placeholder="Message"  required></textarea>
                   <span class='error-message' id='message-error'></span>
                 </div>
       
